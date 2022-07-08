@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ejerciciopaniamor.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_quienessomos"
+        android:name="com.example.ejerciciopaniamor.ui.quienes_somos.QuienesSomosFragment"
+        android:label="@string/menu_quienessomos"
+        tools:layout="@layout/fragment_quienes_somos" />
+
+    <fragment
+        android:id="@+id/nav_visionmision"
+        android:name="com.example.ejerciciopaniamor.ui.vision_mision_valores.VisionMisionValoresFragment"
+        android:label="@string/menu_visionmision"
+        tools:layout="@layout/fragment_misionvision" />
+
+    <fragment
+        android:id="@+id/nav_declaracionprincipios"
+        android:name="com.example.ejerciciopaniamor.ui.declaracionprincipios.DeclaracionPrincipiosFragment"
+        android:label="@string/menu_declaracionprincipios"
+        tools:layout="@layout/fragment_declaracionprincipios"
+        />
+</navigation>

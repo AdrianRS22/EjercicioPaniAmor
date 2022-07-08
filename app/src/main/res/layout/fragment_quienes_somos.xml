@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.quienes_somos.QuienesSomosFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagen_quienessomos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:padding="16dp"
+                android:text="Fundación PANIAMOR es una organización no gubernamental, sin fines de lucro, sin filiación político-partidista, de carácter técnico y naturaleza preventiva, que trabaja para incorporar la cultura de los derechos de la niñez y la adolescencia en la acción política y social. Con este fin construye alianzas visionarias con el Estado, la empresa privada y otras organizaciones nacionales e internacionales con los que potencia el trabajo conjunto de los distintos sectores de la sociedad.  La Fundación PANIAMOR construye, desarrolla y valida modelos de intervención relevantes y efectivos para nuestros objetivos, basados en la experiencia y en la evidencia de resultados. Modelos que se transfieren al Estado por su potencial de escalamiento mediante políticas públicas y programas institucionalizados. Se desarrolla así la capacidad-país para afrontar violencias y exclusiones en la vida de personas menores de edad.  Por su labor en defensa de los derechos de las niñas, niños y personas adolescentes, la Fundación PANIAMOR fue declarada de interés público para los fines del Estado Costarricense mediante Decreto No.19212-J-H de 13 de Setiembre de 1989."
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
